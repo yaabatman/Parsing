@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_soup_for_url(url):
+def get_soup_for_url(url):    # change for commit
     response = requests.get(url, headers=headers)
     response.encoding = 'utf-8'
     soup = BeautifulSoup(response.text, 'lxml')
